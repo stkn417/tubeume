@@ -1,10 +1,10 @@
 
-@path = "/home/ec2-user/sinatra/twiume/"
+@path = "/home/ec2-user/sinatra/tubeume/"
 
 worker_processes 1
 working_directory @path
 timeout 300
-listen '/tmp/twiume.sock'
+listen '/tmp/tubeume.sock'
 pid "#{@path}tmp/pids/unicorn.pid"
 
 stderr_path "#{@path}log/unicorn.stderr.log"
