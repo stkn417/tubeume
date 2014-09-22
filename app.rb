@@ -13,8 +13,10 @@ class App < Sinatra::Base
   post '/' do
     @link = @params[:link]
 
-    @code = "<blockquote class=\"twitter-tweet\" lang=\"ja\"><a href=\"" + @link + "\"></a></blockquote>
-<script async src=\"//platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+    @link = @link[@link.index(":")+1..@link.size]
+    @link.gsub!("youtu.be","www.youtube.com/embed")
+
+    @code = "<iframe width=\"560\" height=\"315\" src=\"" + @link + "\" frameborder=\"0\" allowfullscreen></iframe>"
 
     slim :index
   end

@@ -86,7 +86,7 @@ checked program was:
 "gcc-4.2 -o conftest -I/Users/kenta/.rbenv/versions/2.1.2/include/ruby-2.1.0/x86_64-darwin13.0 -I/Users/kenta/.rbenv/versions/2.1.2/include/ruby-2.1.0/ruby/backward -I/Users/kenta/.rbenv/versions/2.1.2/include/ruby-2.1.0 -I. -I/Users/kenta/.rbenv/versions/2.1.2/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -D_GNU_SOURCE   -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/kenta/.rbenv/versions/2.1.2/lib -L. -L/Users/kenta/.rbenv/versions/2.1.2/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
 Undefined symbols for architecture x86_64:
   "_mremap", referenced from:
-      _t in ccZc9RNp.o
+      _t in ccKjD8Tv.o
 ld: symbol(s) not found for architecture x86_64
 collect2: ld returned 1 exit status
 checked program was:
